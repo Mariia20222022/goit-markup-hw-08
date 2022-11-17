@@ -55,6 +55,7 @@ height: 70px;
         margin-top: 30px;
       @media screen and (min-width:768px){
         margin-bottom: 10px;
+        text-align: left;
       
       }   
  @media screen and(min-width:1200px){
@@ -68,21 +69,27 @@ height: 70px;
     line-height: 1.71;
     letter-spacing: .03em;
     color: var(--text-color);
- 
+ @media screen and(min-width:767px){
+    justify-content: flex-start;
+ }
 }
 .benefits{
+    height: 120px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--shade-color);
+    width: 100%;
+        border-radius: 4px;
     @media screen and (max-width:767px){
     margin-bottom: 30px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
     }
    
-   height: 120px; 
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--shade-color);
-       
-        border-radius: 4px;
+   
 }
 .list__benefits{
     @media screen and(min-width:768px){

@@ -78,3 +78,10 @@ transition-property: fill;
        height: 92px;
 }
 }
+.clients__link:hover .clients__icon {
+  fill: var(--additional-color);
+}
+
+.clients__link:focus .clients__icon {
+  fill: var(--additional-color);
+}
