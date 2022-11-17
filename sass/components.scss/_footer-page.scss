@@ -48,7 +48,7 @@
 .footer__title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.17;
     letter-spacing: .03em;
     text-transform: uppercase;
     color: var(--attribute-color);
@@ -122,8 +122,9 @@
     margin-right: 109px;
     text-align: center;
 @media screen and (max-width:479px) {
-     margin-left:auto;
-     margin-right: auto;
+   
+    margin-left: 40px;
+    margin-right: 40px;
     }
     @media screen  and (min-width:768px)
     {

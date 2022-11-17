@@ -24,13 +24,13 @@
     @media screen and(min-width:768px){
       
             margin-bottom: 30px;
-       justify-content: space-around;
+       justify-content: center;
         
     }
         @media screen and(min-width:1200px) {
           
             margin-bottom: 50px;
-    
+    justify-content: center;
     
         }
 }
@@ -69,7 +69,11 @@ background-color: var(--additional-color);
 
 .card__item {
 
-    @media screen and(max-width:767px) {
+        @media screen and(max-width:479px) {
+            width: 290px;
+        }
+    
+    @media screen and(min-width:480px) {
          width: 450px;
         }
                  @media screen and(min-width:768px) {
