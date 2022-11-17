@@ -1,0 +1,107 @@
+.team__section{
+padding: 60px 0px;
+background-color: var(--shade-color);
+@media screen and(min-width:1200px){
+        padding: 94px 0px;
+}
+}
+.team__card{
+@media screen and (max-width:767px){
+width: 450px;
+}
+@media screen and (min-width:768px){
+        width:354px;
+}
+@media screen and (min-width:1200px) {
+        width: 270px;
+}
+}
+.team__title{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-align: center;
+margin-top: 0;
+margin-bottom: 50px;
+}
+
+.team__item {
+padding-top: 30px;
+padding-bottom: 24px;
+text-align: center;
+box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+        border-radius: 0px 0px 4px 4px;
+        background: var(--attribute-color);
+}
+.person__title {
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: .03em;
+margin-top: 0px;
+margin-bottom: 10px;
+@media screen and (min-width:1200px) {
+    line-height: 1.17;  
+    margin-top: 30px;  
+            ;
+}
+}
+.post__title {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: .03em;
+color: var(--text-color);
+@media screen and (min-width:1200px) {
+                line-height: 1.17;
+}
+}
+.icon__list {
+
+display: flex;
+gap: 10px;
+margin-top: 16px;
+justify-content: center;
+}
+.icon__item {
+width: 44px;
+height: 44px;
+}
+.link__icon {
+
+display: flex;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background-color: var(--background-icon);
+justify-content: center;
+align-items: center;
+transition-property: fill, background-color;
+transition-duration: var(--transition-duration);
+transition-timing-function: var(--transition-timing-function);
+&:hover{
+background-color: var(--additional-color);
+
+}
+&:focus{
+background-color: var(--additional-color);
+
+}
+}
+.icon {
+width: 20px;
+height: 20px;
+fill: var(--icon-color);
+}
+.link__icon:hover .icon {
+        fill: var(--attribute-color);
+}
+
+.link__icon:focus .icon {
+        fill: var(--attribute-color);
+}
+.list__team{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+}

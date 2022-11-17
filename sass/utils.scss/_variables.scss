@@ -1,0 +1,72 @@
+
+:root {
+    --base-color: #212121;
+    --additional-color: #2196F3;
+    --accent-color: #000000;
+    --text-color: #757575;
+    --attribute-color: #FFFFFF;
+    --section-color: #2F303A;
+    --contacts-color: rgba(255, 255, 255, 0.6);
+    --shade-color: #F5F4FA;
+    --portfolio-color: #F5F5F5;
+    --button-active: #188CE8;
+    --border-color: #ECECEC;
+    --secondary-border: #EEEEEE;
+    --icon-color: #AFB1B8;
+    --background-icon: rgba(255, 255, 255, 0.1);
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-duration: 250ms;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: var(--base-color);
+    background-color: var(--attribute-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.is-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+a{
+    text-decoration: none;
+}
+
+.list{
+    list-style-type: none;
+}
+.link{
+    text-decoration: none;
+}
+.is-hidden{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+        clip: rect(0 0 0 0);
+}

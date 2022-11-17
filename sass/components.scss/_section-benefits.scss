@@ -1,0 +1,96 @@
+.section__benefits{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and(min-width:1200px){
+       padding: 94px 0px; 
+    }
+}
+.benefits__items{
+    @media screen and (max-width:479px) {
+            width: 290px;
+            margin-bottom: 30px;
+        }
+    @media screen and (min-width:480px){
+        width: 450px;
+            margin-bottom: 30px;
+    }
+   
+    @media screen and (min-width:768px){
+        width: 354px;
+        margin-bottom: 30px;
+        &:nth-child(1) {
+                margin-right: 30px;
+            }
+                        &:nth-child(3) {
+                            margin-right: 30px;
+                        }
+    }
+    @media screen and(min-width:1200px){
+       width: 270px; 
+    &:nth-child(1) {
+            margin-right: 0;
+        }
+       &:nth-child(3){
+        margin-right: 0;
+       }
+    }
+}
+.benefits__items:not:last-child{
+    @media screen and (max-width:767px){
+        margin-bottom: 30px;
+    }
+   
+}
+.benefits__icon{
+width: 70px;
+height: 70px;
+}
+.benefits__title{
+        font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: .03em;
+            text-transform: uppercase;
+      text-align: center; 
+        margin-top: 30px;
+      @media screen and (min-width:768px){
+        margin-bottom: 10px;
+      
+      }   
+ @media screen and(min-width:1200px){
+    line-height: 1.17;
+   
+ }       
+}
+.discription__benefits {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: .03em;
+    color: var(--text-color);
+ 
+}
+.benefits{
+    @media screen and (max-width:767px){
+    margin-bottom: 30px;
+    }
+   
+   height: 120px; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--shade-color);
+       
+        border-radius: 4px;
+}
+.list__benefits{
+    @media screen and(min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+    }
+     @media screen and(min-width:1200px){
+        gap: 30px;
+        
+     }
+}
