@@ -251,6 +251,7 @@ body.modal-open {
 }
 
 .contacts__icon {
+  fill: var(--icon-color);
   margin-right: 8px;
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -280,6 +281,31 @@ body.modal-open {
   height: 4px;
   background: var(--additional-color);
   border-radius: 2px;
+}
+
+.list__contacts {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .list__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation__contacts {
+    padding: 32px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .mobile__menu {
@@ -1026,7 +1052,6 @@ body.modal-open {
 .overlay {
   padding: 118px 0px;
   margin: 0px auto;
-  max-width: 1600px;
   height: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -1034,6 +1059,7 @@ body.modal-open {
 }
 @media screen and (max-width: 480px) {
   .overlay {
+    max-width: 480px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero1x_mobile.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero1x_mobile.jpg);
   }
@@ -1048,6 +1074,7 @@ body.modal-open {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero1x_tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero1x_tablet.jpg);
+    max-width: 1199px;
   }
 }
 @media (min-width: 768px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1058,6 +1085,7 @@ body.modal-open {
 }
 @media screen and (min-width: 1200px) {
   .overlay {
+    max-width: 1600px;
     padding: 200px 0px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero1x_desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero1x_desktop.jpg);
@@ -1471,8 +1499,8 @@ body.modal-open {
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  -webkit-transition-property: border;
-  transition-property: border;
+  -webkit-transition-property: fill, border;
+  transition-property: fill, border;
   -webkit-transition-duration: var(--transition-duration);
           transition-duration: var(--transition-duration);
   -webkit-transition-timing-function: var(--transition-timing-function);
@@ -1506,6 +1534,7 @@ body.modal-open {
   display: block;
   width: 106px;
   height: 60px;
+  fill: var(--icon-color);
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: var(--transition-duration);
@@ -1612,7 +1641,7 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .footer__title--left {
-    margin-right: 234px;
+    text-align: center;
     margin-bottom: 20px;
   }
 }
